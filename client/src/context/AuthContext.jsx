@@ -2,7 +2,7 @@ import {createContext, useState} from 'react';
 
  const AuthContext = createContext();
 
-export const AuthProvider = ({children}) => {
+ const AuthProvider = ({children}) => {
   const [token, setToken] = useState(localStorage.getItem("token"));
   const [role, setRole] = useState(localStorage.getItem("role"));
 
@@ -19,3 +19,5 @@ export const AuthProvider = ({children}) => {
     </AuthContext.Provider>
   );
 };
+
+export {AuthContext, AuthProvider};

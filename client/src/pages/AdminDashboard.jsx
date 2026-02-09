@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
-export  function AdminDashboard() {
+  function AdminDashboard() {
   const [users, setUsers] = useState([]);
 
   const fetchUsers = async () => {
@@ -52,3 +52,6 @@ export  function AdminDashboard() {
     </div>
   );
 }
+
+
+export default AdminDashboard;
