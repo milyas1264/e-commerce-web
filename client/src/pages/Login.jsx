@@ -61,7 +61,7 @@ export default function Login() {
             <div className="space-y-2">
                  <div className="flex justify-between items-center">
                     <label className="text-sm font-medium">Password</label>
-                    <Link to="/forgot-password" class="text-xs text-primary hover:underline">Forgot password?</Link>
+                    <Link to="/forgot-password" className="text-xs text-primary hover:underline">Forgot password?</Link>
                  </div>
                 <Input 
                     type="password" 
@@ -79,8 +79,9 @@ export default function Login() {
 
         <div className="mt-6 text-center text-sm">
             <span className="text-gray-500">Don't have an account? </span>
-            <Link to="/signup" className="font-bold text-primary hover:underline">
-                Sign up
+            <Link to="/register" className="font-bold text-primary hover:underline">
+                Creat account
+                
             </Link>
         </div>
     </div>
